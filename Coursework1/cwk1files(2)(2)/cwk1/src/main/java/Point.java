@@ -22,17 +22,34 @@ public class Point {
   private static final double MAX_LATITUDE = 90.0;
   private static final double MEAN_EARTH_RADIUS = 6.371009e+6;
 
-  // TODO: Create a stub for the constructor
+  public Point(ZoneDateTime timestamp, double longitude, double latitude, double Elevation){
+    //Empty constructor to be implemented later.
+  }
 
   // TODO: Create a stub for getTime()
+  public ZoneDateTime getTime(){
+    return null; //but replace with the actual implementation later
+  }
 
   // TODO: Create a stub for getLatitude()
+  public double getLatitude () {
+    return 0; //replace with actual implementation later
+  }
 
   // TODO: Create a stub for getLongitude()
+  public double getLongitude(){
+    return 0; //replace with the actual implementation later
+  }
 
   // TODO: Create a stub for getElevation()
+  public double getElevation() {
+    return 0; //replce with actual implementation later
+  }
 
   // TODO: Create a stub for toString()
+  public String toString(){
+    return null; //replace with actual implementation later.
+  }
 
   // IMPORTANT: Do not alter anything beneath this comment!
 
