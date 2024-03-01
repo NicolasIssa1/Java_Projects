@@ -13,6 +13,7 @@ import static java.lang.Math.toRadians;
  *
  * @author Nick Efford & YOUR NAME
  */
+
 public class Point {
   // Constants useful for bounds checking, etc
 
@@ -22,33 +23,51 @@ public class Point {
   private static final double MAX_LATITUDE = 90.0;
   private static final double MEAN_EARTH_RADIUS = 6.371009e+6;
 
+   // Fields (instance variables) to store the state of a Point object.
+   //this function is to store the time the point was recorded.
+   private ZonedDateTime timestamp; 
+   //this one to stores the longitude in degrees.
+   private double longitude;
+   //stores the latitude in degrees. 
+   private double latitude;
+   //stores the elevation in meters above sea level.
+   private double elevation; 
+
   public Point(ZoneDateTime timestamp, double longitude, double latitude, double Elevation){
-    //Empty constructor to be implemented later.
+    if(lon < MIN_LONGITUDE || lon > MAX_LONGITUDE){
+      throw new GPSException("Longitude out of bounds");
+    }
+    if(lat < MIN_LATITUDE || lat > MAX_LATITUDE){
+      throw new GPSException("Latitude out of bounds");
+    }
+    timestamp = ts;
+    longitude = lon;
+    latitude = lat;
+    elevation = elev;
   }
 
   // TODO: Create a stub for getTime()
   public ZoneDateTime getTime(){
-    return null; //but replace with the actual implementation later
+    return timestamp;
   }
 
   // TODO: Create a stub for getLatitude()
   public double getLatitude () {
-    return 0; //replace with actual implementation later
+    return longitude; 
   }
 
   // TODO: Create a stub for getLongitude()
   public double getLongitude(){
-    return 0; //replace with the actual implementation later
+    return latitude ;
   }
 
-  // TODO: Create a stub for getElevation()
   public double getElevation() {
-    return 0; //replce with actual implementation later
-  }
+    return elevation;
+}
 
   // TODO: Create a stub for toString()
   public String toString(){
-    return null; //replace with actual implementation later.
+    return String.format("(%f, %f) %f m", longitude, latitude, elevation);
   }
 
   // IMPORTANT: Do not alter anything beneath this comment!
