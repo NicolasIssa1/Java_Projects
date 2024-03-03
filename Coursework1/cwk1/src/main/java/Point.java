@@ -22,31 +22,51 @@ public class Point {
   private static final double MAX_LATITUDE = 90.0;
   private static final double MEAN_EARTH_RADIUS = 6.371009e+6;
 
+  private ZoneDateTime timestamp;
+  private double longitude;
+  private double latitude;
+  private double elevation;
+
   // TODO: Create a stub for the constructor
   public Point(ZonedDateTime timestamp, double longitude, double latitude, double elevation) {
+
+    if(longitude < MIN_LONGITUDE || longitude > MAX_LONGITUDE){
+      throw new GPSException("Invalid longitude: +" + longitude);
+    }
+
+    if(latitude < MIN_LATITUDE || latitude > MAX_LATITUDE){
+      throw new GPSException("Invalid latitude: +" + latitude);
+    }
+    this.timestamp = timestamp;
+    this longitude = longitude;
+    this.latitude = latitude;
+    this.elevation = elevation;
+
   }
   // TODO: Create a stub for getTime()
   public ZoneDateTime getTime(){
+    return this.timestamp;
   }
 
   // TODO: Create a stub for getLatitude()
   public double getLongitude(){
-    return 0;
+    return this.longitude;
   }
 
   // TODO: Create a stub for getLongitude()
   public double getLatitude(){
-    return 0;
+    return this.latitude;
   }
 
   // TODO: Create a stub for getElevation()
   public double getElevation(){
-    return 0;
+    return this.elevation;
   }
 
   // TODO: Create a stub for toString()
+  @Override
   public String toString(){
-    return null;
+    return String.format("(%.5f, %.5f) %.1f m", longitude, latitude, elevation);
   }
 
   // IMPORTANT: Do not alter anything beneath this comment!
