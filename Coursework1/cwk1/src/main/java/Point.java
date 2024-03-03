@@ -38,7 +38,7 @@ public class Point {
       throw new GPSException("Invalid latitude: +" + latitude);
     }
     this.timestamp = timestamp;
-    this longitude = longitude;
+    this.longitude = longitude;
     this.latitude = latitude;
     this.elevation = elevation;
 
