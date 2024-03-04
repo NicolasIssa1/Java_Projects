@@ -7,7 +7,6 @@ import static java.lang.Math.sin;
 import static java.lang.Math.sqrt;
 import static java.lang.Math.toRadians;
 
-
 /**
  * Represents a point in space and time, recorded by a GPS sensor.
  *
@@ -22,7 +21,7 @@ public class Point {
   private static final double MAX_LATITUDE = 90.0;
   private static final double MEAN_EARTH_RADIUS = 6.371009e+6;
 
-  private ZoneDateTime timestamp;
+  private ZonedDateTime timestamp;
   private double longitude;
   private double latitude;
   private double elevation;
@@ -44,7 +43,7 @@ public class Point {
 
   }
   // TODO: Create a stub for getTime()
-  public ZoneDateTime getTime(){
+  public ZonedDateTime getTime(){
     return this.timestamp;
   }
 

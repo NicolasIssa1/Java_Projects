@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/GPSException.java">
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/TrackInfo.java">
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/ElevationPlot.java">
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/Track.java">
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/PlotApplication.java">
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/Point.java">
+<error line="30" column="30" severity="warning" message="&apos;timestamp&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="30" column="48" severity="warning" message="&apos;longitude&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="30" column="66" severity="warning" message="&apos;latitude&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="30" column="83" severity="warning" message="&apos;elevation&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+</file>
+<file name="/workspaces/Java_Projects/Coursework1/cwk1/src/main/java/ConvertToKML.java">
+</file>
+</checkstyle>
