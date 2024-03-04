@@ -72,7 +72,7 @@ public class Track {
       //and add it to the list of points
       points.add(point);
       }
-        scanner.close();
+      scanner.close();
     }
     catch (IOException | NumberFormatException | DateTimeParseException e)
     {
