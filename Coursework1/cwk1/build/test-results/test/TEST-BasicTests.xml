@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BasicTests" tests="18" skipped="0" failures="10" errors="0" timestamp="2024-03-04T19:55:43" hostname="codespaces-343732" time="0.358">
+<testsuite name="BasicTests" tests="18" skipped="0" failures="10" errors="0" timestamp="2024-03-04T20:20:24" hostname="codespaces-343732" time="0.196">
   <properties/>
-  <testcase name="Correct string representation of a Point" classname="BasicTests" time="0.067">
+  <testcase name="Correct string representation of a Point" classname="BasicTests" time="0.058">
     <failure message="org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (2 failures)&#10;&#9;java.lang.AssertionError: &#10;Expected: is &quot;(-1.54772, 53.80394), 69.8 m&quot;&#10;     but: was &quot;(-1.54772, 53.80394) 69.8 m&quot;&#10;&#9;java.lang.AssertionError: &#10;Expected: is &quot;(-1.54853, 53.80462), 72.5 m&quot;&#10;     but: was &quot;(-1.54853, 53.80462) 72.5 m&quot;" type="org.gradle.internal.exceptions.DefaultMultiCauseException">org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (2 failures)
 	java.lang.AssertionError: 
 Expected: is &quot;(-1.54772, 53.80394), 69.8 m&quot;
@@ -326,9 +326,9 @@ Expected: is &quot;(-1.54853, 53.80462), 72.5 m&quot;
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Latitude stored and retrieved correctly" classname="BasicTests" time="0.006"/>
+  <testcase name="Latitude stored and retrieved correctly" classname="BasicTests" time="0.003"/>
   <testcase name="GPSException if longitude is too low" classname="BasicTests" time="0.006"/>
-  <testcase name="GPSException when retrieving from an empty Track" classname="BasicTests" time="0.022">
+  <testcase name="GPSException when retrieving from an empty Track" classname="BasicTests" time="0.006">
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -417,7 +417,7 @@ Expected: is &quot;(-1.54853, 53.80462), 72.5 m&quot;
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Appropriate exception if data file does not exist" classname="BasicTests" time="0.014">
+  <testcase name="Appropriate exception if data file does not exist" classname="BasicTests" time="0.004">
     <failure message="java.lang.AssertionError: &#10;Expected: (is &lt;class java.io.FileNotFoundException&gt; or is &lt;class java.nio.file.NoSuchFileException&gt;)&#10;     but: was &lt;class java.io.IOException&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: (is &lt;class java.io.FileNotFoundException&gt; or is &lt;class java.nio.file.NoSuchFileException&gt;)
      but: was &lt;class java.io.IOException&gt;
@@ -506,7 +506,7 @@ Expected: (is &lt;class java.io.FileNotFoundException&gt; or is &lt;class java.n
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Points read into a Track correctly" classname="BasicTests" time="0.024">
+  <testcase name="Points read into a Track correctly" classname="BasicTests" time="0.016">
     <failure message="java.io.IOException: Error reading file: data/test.csv" type="java.io.IOException">java.io.IOException: Error reading file: data/test.csv
 	at Track.readFile(Track.java:80)
 	at BasicTests.readFile(BasicTests.java:175)
@@ -599,8 +599,8 @@ Caused by: java.time.format.DateTimeParseException: Text 'Time' could not be par
 	... 81 more
 </failure>
   </testcase>
-  <testcase name="GPSException if latitude is too high" classname="BasicTests" time="0.024"/>
-  <testcase name="GPSException if index is too low" classname="BasicTests" time="0.006">
+  <testcase name="GPSException if latitude is too high" classname="BasicTests" time="0.002"/>
+  <testcase name="GPSException if index is too low" classname="BasicTests" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -689,8 +689,8 @@ Caused by: java.time.format.DateTimeParseException: Text 'Time' could not be par
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="GPSException if longitude is too low" classname="BasicTests" time="0.026"/>
-  <testcase name="GPSException if index is too high" classname="BasicTests" time="0.011">
+  <testcase name="GPSException if longitude is too low" classname="BasicTests" time="0.002"/>
+  <testcase name="GPSException if index is too high" classname="BasicTests" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -779,10 +779,10 @@ Caused by: java.time.format.DateTimeParseException: Text 'Time' could not be par
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Elevation stored and retrieved correctly" classname="BasicTests" time="0.007"/>
-  <testcase name="Time stored and retrieved correctly" classname="BasicTests" time="0.001"/>
-  <testcase name="Longitude stored and retrieved correctly" classname="BasicTests" time="0.003"/>
-  <testcase name="Size of a Track returned correctly" classname="BasicTests" time="0.017">
+  <testcase name="Elevation stored and retrieved correctly" classname="BasicTests" time="0.001"/>
+  <testcase name="Time stored and retrieved correctly" classname="BasicTests" time="0.002"/>
+  <testcase name="Longitude stored and retrieved correctly" classname="BasicTests" time="0.002"/>
+  <testcase name="Size of a Track returned correctly" classname="BasicTests" time="0.007">
     <failure message="org.opentest4j.MultipleFailuresError: Multiple Failures (1 failure)&#10;&#9;java.lang.AssertionError: &#10;Expected: is &lt;4&gt;&#10;     but: was &lt;0&gt;" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: Multiple Failures (1 failure)
 	java.lang.AssertionError: 
 Expected: is &lt;4&gt;
@@ -906,7 +906,7 @@ Expected: is &lt;4&gt;
 	... 84 more
 </failure>
   </testcase>
-  <testcase name="GPSException if data file has fewer than 4 columns" classname="BasicTests" time="0.025">
+  <testcase name="GPSException if data file has fewer than 4 columns" classname="BasicTests" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: &lt;GPSException&gt; but was: &lt;java.io.IOException&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: &lt;GPSException&gt; but was: &lt;java.io.IOException&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -1007,7 +1007,7 @@ Caused by: java.time.format.DateTimeParseException: Text 'Time' could not be par
 	... 85 more
 </failure>
   </testcase>
-  <testcase name="Old data cleared when reading a new file" classname="BasicTests" time="0.002">
+  <testcase name="Old data cleared when reading a new file" classname="BasicTests" time="0.01">
     <failure message="java.io.IOException: Error reading file: data/test.csv" type="java.io.IOException">java.io.IOException: Error reading file: data/test.csv
 	at Track.readFile(Track.java:80)
 	at BasicTests.readClearOldData(BasicTests.java:186)
@@ -1100,8 +1100,8 @@ Caused by: java.time.format.DateTimeParseException: Text 'Time' could not be par
 	... 81 more
 </failure>
   </testcase>
-  <testcase name="GPSException if longitude is too high" classname="BasicTests" time="0.013"/>
-  <testcase name="Points stored in and retrieved from a Track correctly" classname="BasicTests" time="0.016">
+  <testcase name="GPSException if longitude is too high" classname="BasicTests" time="0.001"/>
+  <testcase name="Points stored in and retrieved from a Track correctly" classname="BasicTests" time="0.022">
     <failure message="org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (4 failures)&#10;&#9;java.lang.AssertionError: &#10;Expected: is &lt;(-1.54772, 53.80394) 69.8 m&gt;&#10;     but: was null&#10;&#9;java.lang.AssertionError: &#10;Expected: is &lt;(-1.54853, 53.80462) 72.5 m&gt;&#10;     but: was null&#10;&#9;java.lang.AssertionError: &#10;Expected: is &lt;(-1.54942, 53.80524) 68.1 m&gt;&#10;     but: was null&#10;&#9;java.lang.AssertionError: &#10;Expected: is &lt;(-1.55083, 53.80547) 70.5 m&gt;&#10;     but: was null" type="org.gradle.internal.exceptions.DefaultMultiCauseException">org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (4 failures)
 	java.lang.AssertionError: 
 Expected: is &lt;(-1.54772, 53.80394) 69.8 m&gt;
