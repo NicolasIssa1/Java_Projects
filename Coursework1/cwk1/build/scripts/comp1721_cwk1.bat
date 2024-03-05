@@ -68,7 +68,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\comp1721_cwk1.jar;%APP_HOME%\lib\javafx-controls-23-ea+3-win.jar;%APP_HOME%\lib\javafx-graphics-23-ea+3-win.jar;%APP_HOME%\lib\javafx-base-23-ea+3-win.jar
+set CLASSPATH=%APP_HOME%\lib\comp1721_cwk1.jar;%APP_HOME%\lib\javafx-controls-23-ea+3-linux.jar;%APP_HOME%\lib\javafx-graphics-23-ea+3-linux.jar;%APP_HOME%\lib\javafx-base-23-ea+3-linux.jar
 
 
 @rem Execute comp1721_cwk1

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="FullTests" tests="8" skipped="0" failures="8" errors="0" timestamp="2024-03-04T20:50:25" hostname="codespaces-343732" time="0.114">
-=======
-<testsuite name="FullTests" tests="8" skipped="0" failures="8" errors="0" timestamp="2024-03-05T00:57:31" hostname="MSI" time="0.049">
->>>>>>> refs/remotes/origin/main
+<testsuite name="FullTests" tests="8" skipped="0" failures="8" errors="0" timestamp="2024-03-05T01:11:55" hostname="codespaces-343732" time="0.048">
   <properties/>
   <testcase name="GPSException if seeking highest point in an empty Track" classname="FullTests" time="0.019">
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
@@ -94,7 +90,7 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="GPSException if seeking lowest point in an empty Track" classname="FullTests" time="0.002">
+  <testcase name="GPSException if seeking lowest point in an empty Track" classname="FullTests" time="0.003">
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -183,13 +179,8 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-<<<<<<< HEAD
-  <testcase name="Total distance computed correctly" classname="FullTests" time="0.002">
-    <failure message="java.lang.AssertionError: &#10;Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;&#10;     but: &lt;0.0&gt; differed by &lt;278.53494&gt; more than delta &lt;1.0E-5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-=======
   <testcase name="Total distance computed correctly" classname="FullTests" time="0.006">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;&#13;&#10;     but: &lt;0.0&gt; differed by &lt;278.53494&gt; more than delta &lt;1.0E-5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
->>>>>>> refs/remotes/origin/main
+    <failure message="java.lang.AssertionError: &#10;Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;&#10;     but: &lt;0.0&gt; differed by &lt;278.53494&gt; more than delta &lt;1.0E-5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;
      but: &lt;0.0&gt; differed by &lt;278.53494&gt; more than delta &lt;1.0E-5&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
@@ -277,11 +268,7 @@ Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-<<<<<<< HEAD
-  <testcase name="GPSException if fewer than 2 points when computing average speed" classname="FullTests" time="0.04">
-=======
   <testcase name="GPSException if fewer than 2 points when computing average speed" classname="FullTests" time="0.002">
->>>>>>> refs/remotes/origin/main
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -370,8 +357,8 @@ Expected: a numeric value within &lt;1.0E-5&gt; of &lt;278.53495&gt;
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Lowest point of a Track found correctly" classname="FullTests" time="0.005">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &lt;(-1.54942, 53.80524), 68.1 m&gt;&#13;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="Lowest point of a Track found correctly" classname="FullTests" time="0.001">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;(-1.54942, 53.80524), 68.1 m&gt;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: is &lt;(-1.54942, 53.80524), 68.1 m&gt;
      but: was null
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
@@ -459,15 +446,9 @@ Expected: is &lt;(-1.54942, 53.80524), 68.1 m&gt;
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-<<<<<<< HEAD
-  <testcase name="Highest point of a Track found correctly" classname="FullTests" time="0.012">
-    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;(-1.54853, 53.80462) 72.5 m&gt;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: is &lt;(-1.54853, 53.80462) 72.5 m&gt;
-=======
-  <testcase name="Highest point of a Track found correctly" classname="FullTests" time="0.003">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &lt;(-1.54853, 53.80462), 72.5 m&gt;&#13;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="Highest point of a Track found correctly" classname="FullTests" time="0.002">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;(-1.54853, 53.80462), 72.5 m&gt;&#10;     but: was null" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: is &lt;(-1.54853, 53.80462), 72.5 m&gt;
->>>>>>> refs/remotes/origin/main
      but: was null
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
@@ -554,13 +535,8 @@ Expected: is &lt;(-1.54853, 53.80462), 72.5 m&gt;
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-<<<<<<< HEAD
-  <testcase name="Average speed computed correctly" classname="FullTests" time="0.009">
+  <testcase name="Average speed computed correctly" classname="FullTests" time="0.001">
     <failure message="java.lang.AssertionError: &#10;Expected: a numeric value within &lt;1.0E-5&gt; of &lt;1.61939&gt;&#10;     but: &lt;0.0&gt; differed by &lt;1.61938&gt; more than delta &lt;1.0E-5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-=======
-  <testcase name="Average speed computed correctly" classname="FullTests" time="0.002">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: a numeric value within &lt;1.0E-5&gt; of &lt;1.61939&gt;&#13;&#10;     but: &lt;0.0&gt; differed by &lt;1.61938&gt; more than delta &lt;1.0E-5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
->>>>>>> refs/remotes/origin/main
 Expected: a numeric value within &lt;1.0E-5&gt; of &lt;1.61939&gt;
      but: &lt;0.0&gt; differed by &lt;1.61938&gt; more than delta &lt;1.0E-5&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
@@ -648,11 +624,7 @@ Expected: a numeric value within &lt;1.0E-5&gt; of &lt;1.61939&gt;
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-<<<<<<< HEAD
-  <testcase name="GPSException if fewer than 2 points when computing distance" classname="FullTests" time="0.005">
-=======
   <testcase name="GPSException if fewer than 2 points when computing distance" classname="FullTests" time="0.001">
->>>>>>> refs/remotes/origin/main
     <failure message="org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected GPSException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
