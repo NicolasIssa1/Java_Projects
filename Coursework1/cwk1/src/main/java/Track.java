@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
 
 /**
  * Represents a point in space and time, recorded by a GPS sensor.
@@ -21,6 +22,7 @@ public class Track {
   }
 
   public Track(String filename) throws IOException {
+    this.points = new ArrayList<Point>();
     // finally readFile within the consteuctor by calling it
     readFile(filename);
   }
@@ -90,21 +92,71 @@ public class Track {
 
   // TODO: Create a stub for lowestPoint()
   public Point lowestPoint(){
-    return null;
+    if(points.size() < 1){
+      throw new GPSException("Not enough points to find the lowest points.");
+    }
+
+    double maxValue = Integer.MAX_VALUE;
+    Point lowestPoint = null;
+
+    for(Point point : points){
+      if(point.getElevation() < maxValue){
+        maxValue = point.getElevation();
+        lowestPoint = point;
+      }
+    }
+    return lowestPoint;
   }
 
   // TODO: Create a stub for highestPoint()
   public Point highestPoint(){
-    return null;
+    if(points.size() < 1){
+      throw new GPSException("Not enough points to find the highest point. ");
+    }
+
+    double minValue = Integer.MIN_VALUE;
+    Point highesPoint = null;
+
+    for(Point point : points){
+      if(point.getElevation() > minValue){
+        minValue = point.getElevation();
+        highesPoint = point;
+      }
+    }
+    return highesPoint;
   }
 
   // TODO: Create a stub for totalDistance()
   public double totalDistance(){
-    return 0;
+    if(points.size() < 2){
+      throw new GPSException("Not enough points to calculcate distance.");
+    }
+    double totalDistance = 0;
+    //I start from the second points since we need to compare each points to the previous one.
+    for(int i = 1; i < points.size(); i++){
+      Point current = points.get(i);
+      Point previous = points.get(i - 1);
+      totalDistance += Point.greatCircleDistance(previous, current);
+    }
+    return totalDistance;
   }
 
   // TODO: Create a stub for averageSpeed()
   public double averageSpeed(){
-    return 0;
+    if(points.size() < 2){
+      throw new GPSException("Not enough points to calculate average speed");
+    }
+
+    double totalDistance = totalDistance();
+    ZonedDateTime startTime = points.get(0).getTime();
+    ZonedDateTime endTime = points.get(points.size() - 1).getTime();
+
+    long totalSeconds = ChronoUnit.SECONDS.between(startTime, endTime);
+
+    if(totalSeconds == 0){
+      throw new GPSException("Start time and end time are the same. Cannot calculate speed.");
+    }
+
+    return totalDistance / totalSeconds;
   }
 }
