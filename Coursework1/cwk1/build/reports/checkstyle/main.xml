@@ -13,7 +13,6 @@
 <error line="30" column="48" severity="warning" message="&apos;longitude&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 <error line="30" column="66" severity="warning" message="&apos;latitude&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 <error line="30" column="83" severity="warning" message="&apos;elevation&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="69" severity="warning" message="Line is longer than 100 characters (found 124)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
 <file name="C:\Users\nicol\OneDrive\Documents\GitHub\Java_Projects\Coursework1\cwk1\src\main\java\Track.java">
 </file>

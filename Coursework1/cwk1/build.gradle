@@ -5,7 +5,6 @@ plugins {
   id 'checkstyle'
   id 'application'
   id 'com.github.ben-manes.versions' version '0.51.0'
-  // Uncomment line below if using JavaFX for Advanced solution
   id 'org.openjfx.javafxplugin' version '0.1.0'
   id 'idea'
 }
@@ -25,8 +24,6 @@ dependencies {
     'org.junit.jupiter:junit-jupiter-engine:5.10.2'
   )
 }
-
-// Uncomment section below if using JavaFX for Advanced solution
 
 javafx {
   version = '23-ea+3'
