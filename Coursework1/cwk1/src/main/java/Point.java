@@ -66,7 +66,8 @@ public class Point {
   @Override
 public String toString(){
   // The format specifier "%.5f" means a floating-point number with 5 decimal places
-  // The format specifier "%.1f m" means a floating-point number with 1 decimal place followed by a space and the letter 'm'
+  // The format specifier "%.1f m" means a floating-point 
+  //number with 1 decimal place followed by a space and the letter 'm'
   return String.format("(%.5f, %.5f), %.1f m", longitude, latitude, elevation);
 }
 

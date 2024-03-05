@@ -41,14 +41,18 @@ public class PlotApplication extends Application {
 
     // Read and plot data
     try {
-      Track track = new Track(params.get(0)); // Load the track data from file
-      double distance = 0; // Initialize cumulative distance
+      // Load the track data from file
+      Track track = new Track(params.get(0));
+      // Initialize cumulative distance
+      double distance = 0;
 
       for (int i = 1; i < track.size(); i++) {
         Point prev = track.get(i - 1);
         Point curr = track.get(i);
-        distance += Point.greatCircleDistance(prev, curr); // Calculate cumulative distance
-        series.getData().add(new XYChart.Data<>(distance, curr.getElevation())); // Add elevation data to series
+        //I then calculate cumulative distance
+        distance += Point.greatCircleDistance(prev, curr);
+        //Add elevation data to series
+        series.getData().add(new XYChart.Data<>(distance, curr.getElevation()));
       }
     } catch (IOException e) {
       e.printStackTrace();

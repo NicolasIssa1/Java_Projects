@@ -18,7 +18,8 @@ public class TrackInfo {
       System.out.println(trackObj.size());
       System.out.println("Lowest point is " + trackObj.lowestPoint());
       System.out.println("Highest point is " + trackObj.highestPoint());
-      System.out.println("Total distance = " + String.format("%.3f km", trackObj.totalDistance()/1000));
+      System.out.println("Total distance = " + String.format("%.3f km", 
+      trackObj.totalDistance()/1000));
       System.out.println("Average speed = " + String.format("%.3f m/s", trackObj.averageSpeed()));
     }
     catch (IOException e){
