@@ -29,7 +29,7 @@ public class Track {
   public void readFile(String filename) throws IOException {
     //and this is to initialize the list of point objects
     this.points = new ArrayList<Point>();
-    //i start by creating a new file for the given filename
+    //i start by creating a new file for the given filenam
     File file = new File(filename);
 
     //now to read the file line by line, : 
