@@ -30,12 +30,13 @@ public class Point {
   public Point(ZonedDateTime timestamp, double longitude, double latitude, double elevation) {
 
     if(longitude < MIN_LONGITUDE || longitude > MAX_LONGITUDE){
-      throw new GPSException("Invalid longitude: +" + longitude);
+      throw new GPSException("Invalid longitude");
     }
 
     if(latitude < MIN_LATITUDE || latitude > MAX_LATITUDE){
-      throw new GPSException("Invalid latitude: +" + latitude);
+      throw new GPSException("Invalid latitude");
     }
+
     this.timestamp = timestamp;
     this.longitude = longitude;
     this.latitude = latitude;
@@ -61,12 +62,13 @@ public class Point {
   public double getElevation(){
     return this.elevation;
   }
-
-  // TODO: Create a stub for toString()
+  
   @Override
-  public String toString(){
-    return String.format("(%.5f, %.5f) %.1f m", longitude, latitude, elevation);
-  }
+public String toString(){
+  // The format specifier "%.5f" means a floating-point number with 5 decimal places
+  // The format specifier "%.1f m" means a floating-point number with 1 decimal place followed by a space and the letter 'm'
+  return String.format("(%.5f, %.5f), %.1f m", longitude, latitude, elevation);
+}
 
   // IMPORTANT: Do not alter anything beneath this comment!
 
