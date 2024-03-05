@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 
+
 /**
  * Represents a point in space and time, recorded by a GPS sensor.
  *
@@ -42,9 +43,6 @@ public class Track {
     while(scanner.hasNextLine())
     {
       line = scanner.nextLine();
-
-      //printing just to test
-      System.out.println(line);
 
       String[] parts = line.split(",");
 
